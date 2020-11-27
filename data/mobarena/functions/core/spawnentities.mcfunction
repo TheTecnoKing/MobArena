@@ -1,0 +1,4 @@
+# Spawns a zombie that is friendly to Red team.
+summon zombie -161.5 61.5 -237.5 {Rotation:[90F,0F],Glowing:1b,CustomNameVisible:1b,Team:"Red",NoAI:0b,Tags:["isAliveRed"],CustomName:'{"text":"Blue\'s Opponent","color":"red","bold":true}',ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F]}
+# Spawns a zombie that is friendly to Blue team.
+summon zombie -159 61.5 -238.5 {Rotation:[-90F,0F],Glowing:1b,CustomNameVisible:1b,Team:"Blue",NoAI:0b,Tags:["isAliveBlue"],CustomName:'{"text":"Red\'s Opponent","color":"blue","bold":true}',ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b,tag:{Unbreakable:1b}}],ArmorDropChances:[0.085F,0.085F,0.085F,0.000F]}

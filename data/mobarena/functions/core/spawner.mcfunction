@@ -1,0 +1,2 @@
+# Checks if EACH team doesn't have the "Wave_Mob_Zombie" amount of mobs and, if so, it spawns the mobs based on the "spawnentities" function.
+execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount < global Wave_Mob_Zombie run execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount < global Wave_Mob_Zombie run function mobarena:core/spawnentities
