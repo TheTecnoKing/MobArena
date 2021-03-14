@@ -1,0 +1,4 @@
+# Issue is, the checks have to run infinitely/until hasGameStarted=0 (future implementation), but the text has to only run once.
+execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 1.. run say Blue killed all the mobs first!
+execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 1.. run say Red killed all the mobs first!
+say mobcheck in corso
