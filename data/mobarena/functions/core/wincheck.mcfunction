@@ -1,0 +1,2 @@
+execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 1.. run execute if score global WinCheck matches 1 run function mobarena:stuff/bluewins
+execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 1.. run execute if score global WinCheck matches 1 run function mobarena:stuff/redwins

@@ -24,31 +24,11 @@ gamerule keepInventory false
 gamerule mobGriefing false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 1
-# Makes the cmb structure to detect the winning team.
-setblock ~-2 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 1..",auto:1b} replace
-setblock ~-2 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-2 ~ ~-2 minecraft:redstone_block replace",auto:1b} replace
-setblock ~-2 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-4 ~ ~-3 minecraft:redstone_block replace",auto:1b} replace
-setblock ~-3 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 1..",auto:1b} replace
-setblock ~-3 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-2 ~ ~-2 minecraft:redstone_block replace",auto:1b} replace
-setblock ~-3 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-4 ~ ~-3 minecraft:redstone_block replace",auto:1b} replace
-setblock ~-4 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 1.."} replace
-setblock ~-4 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"say Blue killed all the mobs first!",auto:1b} replace
-setblock ~-4 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~ ~ ~-3 air replace",auto:1b} replace
-setblock ~-4 ~ ~-1 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-2 ~ ~-4 air replace",auto:1b} replace
-setblock ~-5 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 0 run execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 1.."} replace
-setblock ~-5 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"say Red killed all the mobs first!",auto:1b} replace
-setblock ~-5 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~ ~ ~-3 air replace",auto:1b} replace
-setblock ~-5 ~ ~-1 chain_command_block[conditional=true,facing=south]{Command:"setblock ~-2 ~ ~-4 air replace",auto:1b} replace
-setblock ~-6 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Red,limit=1,sort=nearest] MobCount matches 0"} replace
-setblock ~-6 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"setblock ~2 ~ ~-2 air replace",auto:1b} replace
-setblock ~-6 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~ ~ ~-3 air replace",auto:1b} replace
-setblock ~-7 ~ ~-4 repeating_command_block[facing=south]{Command:"execute if score @e[type=minecraft:armor_stand,team=Blue,limit=1,sort=nearest] MobCount matches 0"} replace
-setblock ~-7 ~ ~-3 chain_command_block[conditional=true,facing=south]{Command:"setblock ~2 ~ ~-2 air replace",auto:1b} replace
-setblock ~-7 ~ ~-2 chain_command_block[conditional=true,facing=south]{Command:"setblock ~ ~ ~-3 air replace",auto:1b} replace
 # Sets up the scoreboards
 scoreboard objectives add MobCount dummy [{"text":"Mob","color":"green","bold":true},{"text":" "},{"text":"Count","color":"dark_green","bold":true}]
 scoreboard objectives add Health health {"text":"❤","color":"red","bold":false}
 scoreboard objectives add Wave_Mob_Zombie dummy
+scoreboard objectives add WinCheck dummy
 # Sets up the teams (by default there are 2 teams, red and blue)
 team add Red {"text":"Red","color":"red","italic":true,"bold":true}
 team add Blue {"text":"Blue","color":"blue","italic":true,"bold":true}
