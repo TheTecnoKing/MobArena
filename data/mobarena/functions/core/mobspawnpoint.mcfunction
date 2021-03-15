@@ -1,0 +1,4 @@
+# Gives the blue mob spawnpoint egg to the player
+give @s bee_spawn_egg{display:{Name:'[{"text":"Blue","color":"blue","bold":true,"italic":false},{"text":" mob spawnpoint","color":"gold","bold":false,"italic":false}]'},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Team:"Blue",Silent:1b,Invulnerable:1b,ShowArms:0b,Small:1b,Marker:1b,Invisible:1b,Tags:["BlueMobSpawnpoint"],CustomName:'[{"text":"Blue","color":"blue","bold":true},{"text":" mob spawnpoint","color":"gold"}]'}} 1
+# Gives the red mob spawnpoint egg to the player
+give @s bee_spawn_egg{display:{Name:'[{"text":"Red","color":"red","bold":true,"italic":false},{"text":" mob spawnpoint","color":"gold","bold":false,"italic":false}]'},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Team:"Red",Silent:1b,Invulnerable:1b,ShowArms:0b,Small:1b,Marker:1b,Invisible:1b,Tags:["RedMobSpawnpoint"],CustomName:'[{"text":"Red","color":"red","bold":true},{"text":" mob spawnpoint","color":"gold"}]'}} 1
