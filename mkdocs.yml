@@ -1,6 +1,7 @@
 site_name: MobArenaDocs
 theme:
   name: material
+  logo: assets/creeper-head.svg
   palette:
     scheme: slate
     primary: blue
