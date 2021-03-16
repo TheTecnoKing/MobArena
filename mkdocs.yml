@@ -1,3 +1,10 @@
 site_name: MobArenaDocs
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tabs
