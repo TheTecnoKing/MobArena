@@ -1,11 +1,11 @@
-site_name: MobArenaDocs
+site_name: MobArena
 theme:
   name: material
   logo: assets/logo.png
   palette:
     scheme: slate
     primary: blue
-    accent: indigo
+    accent: blue
   features:
     - navigation.instant
     - navigation.tabs
