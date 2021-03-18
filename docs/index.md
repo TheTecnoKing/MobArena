@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Home
+## Welcome to MobArena Docs!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is the official documentation for the MobArena datapack made by The_TecnoKing.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## What is MobArena?
+It's a Minecraft datapack that aims at providing a Mob Arena-type minigame in a vanilla world, with no need of plugins or mods.  
+!!! attention    
+    At the moment the datapack is in a pre-release, heavy-development stage. The datapack is incomplete with lots of features missing.  
+    Most changes will be made in the `dev` branch, which you can find [here](https://github.com/TheTecnoKing/MobArena/tree/dev).
+    If you'd like to check more about the datapack's development status, head over [here](https://github.com/TheTecnoKing/MobArena/projects/2).

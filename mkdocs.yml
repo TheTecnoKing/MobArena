@@ -1,7 +1,19 @@
 site_name: MobArena
+repo_url: https://github.com/TheTecnoKing/MobArena
+repo_name: TheTecnoKing/MobArena
+edit_uri: edit/docs/docs/
+nav:
+    - Home: 'index.md'
+    - 'Getting started':
+        - 'Installation': 'getting-started/installation.md'
+        - 'First boot': 'getting-started/first-boot.md'
+    - Commands: 'commands/index.md'
 theme:
   name: material
-  logo: assets/logo.png
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     scheme: slate
     primary: blue
@@ -9,3 +21,10 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
